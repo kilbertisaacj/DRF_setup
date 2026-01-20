@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>reCAPTCHA Test</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+<h3>reCAPTCHA v2 Test</h3>
+
+<form method="post" action="/verify/">
+  {% csrf_token %}
+  <div class="g-recaptcha" data-sitekey="6Ld6FUMsAAAAAC8dzHn3Cs2f2GVpuRPfK3hZEYPH"></div>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
